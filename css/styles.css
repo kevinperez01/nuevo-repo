@@ -125,6 +125,16 @@ img {
   max-width: 100%; }
 
 /* FIN DE MOBILE FIRST */
+/**** MAPA DE NAVEGACION ****/
+#mapa-navegacion {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center; }
+
+#mapa-navegacion {
+  background: black; }
+
 /*INICIO SECCION PROGRAMAS (PECHO) */
 .caja-programas {
   width: 1500px;
@@ -158,12 +168,24 @@ img {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   margin: 10px; }
 
-.ejercicios-pecho {
+/**** FIN DE PRIMERA CAJA ****/
+/** APLICANDO MIXIN A CAJAS **/
+.caja2-flex {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start; }
+  justify-content: center;
+  align-items: center; }
 
-/**** FIN DE SEGUNDA CAJA ****/
+.caja3-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.caja4-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+/** FIN  DE  MIXIN **/
 /**** INICIO DE  SEGUNDA CAJA ****/
 .press-barra {
   background: #2b0606;
@@ -176,11 +198,6 @@ img {
   background-color: #505050;
   padding-bottom: 70px;
   padding-top: 10px; }
-
-.caja2-flex {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
 
 .caja2-flex p {
   background-color: white;
@@ -199,17 +216,13 @@ img {
   color: antiquewhite;
   font-size: 25px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  padding: 20px; }
+  padding: 20px;
+  padding-left: 38%; }
 
 #caja3 {
   background-color: #505050;
   padding-bottom: 70px;
   padding-top: 10px; }
-
-.caja3-flex {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
 
 .caja3-flex p {
   background-color: white;
@@ -224,14 +237,12 @@ img {
 /**** FIN DE TERCER CAJA****/
 /**** INICIO DE CUARTA CAJA ****/
 .press-inclinado {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: #2b0606;
   color: antiquewhite;
   font-size: 25px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  padding: 20px; }
+  padding: 20px;
+  padding-left: 38%; }
 
 #caja4 {
   background-color: #505050;

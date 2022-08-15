@@ -36,14 +36,26 @@
         margin: 10px;
     }
 
-    .ejercicios-pecho{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-    /**** FIN DE SEGUNDA CAJA ****/
+    /**** FIN DE PRIMERA CAJA ****/
 
-    /**** INICIO DE  SEGUNDA CAJA ****/
+         /** APLICANDO MIXIN A CAJAS **/
+@mixin flexible ($dis, $just, $aling) {
+    display: $dis ;
+    justify-content: $just ;
+    align-items: $aling;
+}
+
+.caja2-flex{
+    @include flexible(flex, center, center)
+}
+.caja3-flex{
+    @include flexible(flex, center, center)
+}
+.caja4-flex{
+    @include flexible(flex, center, center)
+}
+          /** FIN  DE  MIXIN **/
+/**** INICIO DE  SEGUNDA CAJA ****/
     .press-barra{
         background: rgb(43, 6, 6);
         color: antiquewhite;
@@ -56,12 +68,6 @@
         background-color:  rgb(80, 80, 80) ;
         padding-bottom: 70px;
         padding-top: 10px;
-    }
-
-    .caja2-flex{
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
     .caja2-flex p{
@@ -78,69 +84,61 @@
     }
     /**** FIN DE SEGUNDA CAJA ****/
 
-    /**** INICIO DE TECER CAJA ****/
-    .press-mancuerna{
-        background: rgb(43, 6, 6);
-        color: antiquewhite;
-        font-size: 25px;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
-        padding: 20px;
-    }
+ /**** INICIO DE TECER CAJA ****/
+.press-mancuerna{
+    background: rgb(43, 6, 6);
+    color: antiquewhite;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    padding: 20px;
+    padding-left: 38%;
+}
 
-    #caja3{
-        background-color:  rgb(80, 80, 80) ;
-        padding-bottom: 70px;
-        padding-top: 10px;
-    }
+#caja3{
+    background-color:  rgb(80, 80, 80) ;
+    padding-bottom: 70px;
+    padding-top: 10px;
+}
 
-    .caja3-flex{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .caja3-flex p{ 
-        background-color: white;
-        color: rgb(43, 6, 6) ;
-        font-size: 20px;
-        margin: 10px;
-    }
-
-    .caja3-flex img{
-        width: 700px;
-        height: 400px;
-    }
-    /**** FIN DE TERCER CAJA****/
-
-    /**** INICIO DE CUARTA CAJA ****/
-    .press-inclinado{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: rgb(43, 6, 6);
-        color: antiquewhite;
-        font-size: 25px;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
-        padding: 20px;
-    }
-
-    #caja4{
-        background-color:  rgb(80, 80, 80) ;
-        padding-bottom: 70px;
-        padding-top: 10px;
-    }
-
-    
-    .parrafo1{ 
+.caja3-flex p{ 
     background-color: white;
-        color: rgb(43, 6, 6) ;
-        font-size: 20px;
-        margin: 10px;
-    }
+    color: rgb(43, 6, 6) ;
+    font-size: 20px;
+    margin: 10px;
+}
 
-    #caja4 img{
-        width: 600px;
-        height: 400px;
-    }
-    /**** FIN DE CUARTA CAJA ****/
+.caja3-flex img{
+    width: 700px;
+    height: 400px;
+}
+/**** FIN DE TERCER CAJA****/
+ /**** INICIO DE CUARTA CAJA ****/
+.press-inclinado{
+    background: rgb(43, 6, 6);
+    color: antiquewhite;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    padding: 20px;
+    padding-left: 38%;
+}
+
+#caja4{
+    background-color:  rgb(80, 80, 80) ;
+    padding-bottom: 70px;
+    padding-top: 10px;
+}
+
+
+.parrafo1{ 
+background-color: white;
+    color: rgb(43, 6, 6) ;
+    font-size: 20px;
+    margin: 10px;
+}
+
+#caja4 img{
+    width: 600px;
+    height: 400px;
+}
+/**** FIN DE CUARTA CAJA ****/   
      /* FIN SECCION PROGRAMAS (PECHO) */
