@@ -142,11 +142,11 @@ img {
   animation-iteration-count: infinite;
   animation-duration: 3s; }
 
+/**** INICIO DE PRIMERA CAJA ****/
 .temario {
-  text-align: left;
-  margin: 10px; }
+  text-align: left; }
 
-.caja1 {
+#caja1 {
   background: #505050;
   padding-bottom: 50px;
   margin-bottom: 20px; }
@@ -158,15 +158,97 @@ img {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   margin: 10px; }
 
-.caja2 {
-  background-color: #505050;
-  padding-bottom: 100px; }
+.ejercicios-pecho {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; }
 
+/**** FIN DE SEGUNDA CAJA ****/
+/**** INICIO DE  SEGUNDA CAJA ****/
 .press-barra {
-  background-color: #2b0606;
+  background: #2b0606;
+  color: antiquewhite;
   font-size: 25px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 20px; }
 
+#caja2 {
+  background-color: #505050;
+  padding-bottom: 70px;
+  padding-top: 10px; }
+
+.caja2-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.caja2-flex p {
+  background-color: white;
+  color: #2b0606;
+  font-size: 20px;
+  margin: 10px; }
+
+.press-plano {
+  width: 700px;
+  height: 400px; }
+
+/**** FIN DE SEGUNDA CAJA ****/
+/**** INICIO DE TECER CAJA ****/
+.press-mancuerna {
+  background: #2b0606;
+  color: antiquewhite;
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 20px; }
+
+#caja3 {
+  background-color: #505050;
+  padding-bottom: 70px;
+  padding-top: 10px; }
+
+.caja3-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.caja3-flex p {
+  background-color: white;
+  color: #2b0606;
+  font-size: 20px;
+  margin: 10px; }
+
+.caja3-flex img {
+  width: 700px;
+  height: 400px; }
+
+/**** FIN DE TERCER CAJA****/
+/**** INICIO DE CUARTA CAJA ****/
+.press-inclinado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2b0606;
+  color: antiquewhite;
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 20px; }
+
+#caja4 {
+  background-color: #505050;
+  padding-bottom: 70px;
+  padding-top: 10px; }
+
+.parrafo1 {
+  background-color: white;
+  color: #2b0606;
+  font-size: 20px;
+  margin: 10px; }
+
+#caja4 img {
+  width: 600px;
+  height: 400px; }
+
+/**** FIN DE CUARTA CAJA ****/
 /* FIN SECCION PROGRAMAS (PECHO) */
 /*INICIO SECCION PROGRAMAS (PIERNA)*/
 .pierna {
