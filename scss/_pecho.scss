@@ -55,6 +55,7 @@
     @include flexible(flex, center, center)
 }
           /** FIN  DE  MIXIN **/
+
 /**** INICIO DE  SEGUNDA CAJA ****/
     .press-barra{
         background: rgb(43, 6, 6);
@@ -141,4 +142,29 @@ background-color: white;
     height: 400px;
 }
 /**** FIN DE CUARTA CAJA ****/   
+
+/** PAGINA RESPONSIVE**/
+#conteiner{
+    display: grid;
+grid-template-areas: 
+"navegacion"
+"inicio"
+"temario"
+"cajas"
+"footer";
+}
+
+#inicio-imagen{
+    grid-area: inicio;
+}
+
+.lista-navegacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+
      /* FIN SECCION PROGRAMAS (PECHO) */
