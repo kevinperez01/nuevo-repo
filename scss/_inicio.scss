@@ -1,4 +1,48 @@
 /* SECCION INICIO*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(10, 9, 9);
+}
+
+.contenedor {
+	width: 90%;
+	margin: auto;
+}
+
+header {
+	padding: 30px 0;
+}
+
+/*
+header .contenedor {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logotipo {
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-weight: normal;
+	color: var(--rojo);
+	font-size: 40px;
+}
+
+header nav a {
+	color: #AAA;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+header nav a:hover,
+header nav a.activo {
+	color: #FFF;
+}
+*/
 .lista-navegacion{
     display: flex;
     justify-content: space-between;
@@ -20,159 +64,76 @@
     color: antiquewhite;
 }
 
-.logo-fitness{
-    width: 200px;
-    height: 150px;
+/* ---- ----- ----- Pelicula Principal ----- ----- ----- */
+.pelicula-principal {
+	font-size: 16px;
+	min-height: 40.62em;
+	color: #fff;
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../img/imagen-inicio.jpg);
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
 }
 
-body{
-    background-color: rgb(10, 9, 9);
+.pelicula-principal .contenedor {
+	margin: 0 auto;
+	margin-bottom: 6.25em;
 }
 
-body{
-    background-repeat: no-repeat;
-    background-size: cover;
+.pelicula-principal .titulo {
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: 0.4em;
 }
 
-.video-fitness{
-    width: 1800px;
-    height: 100%
-} 
-
-h1{
-    text-align: center;
-    color: rgb(80, 0, 0);
-    font-family: impact, sans-serif;
-    font-size: 40px;
+.pelicula-principal .descripcion {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
 }
 
-h2{
-    text-align: center;
-    color: rgb(80, 0, 0);
-    font-family: impact, sans-serif;
-    font-size: 40px;
+.pelicula-principal .boton {
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: #fff;
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
 }
 
-p{
-    color: antiquewhite;
-    text-align: center;
+.pelicula-principal .boton:hover {
+	background: #fff;
+	color: #000;
 }
 
-.programa-fitness{
-    width: 300px;
-    height: 200px;
-    margin: 16px;
-    border-radius: 20px;
-    box-shadow: 5px 8px 12px rgb(19, 2, 2);
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
+.pelicula-principal .boton i {
+	margin-right: 1.25em;
 }
 
-.programa-fitness:hover{
-    transform: scale(1.1);
-    box-shadow: 13px 15px 37px rgb(19, 2, 2);
-}
-/* FIN SECCION INICIO*/
+/* ---- ----- ----- Media Queries ----- ----- ----- 
+@media screen and (max-width: 800px) {
+	header .logotipo {
+		margin-bottom: 10px;
+		font-size: 30px;
+	}
 
-/* MOBILE FIRST DE INDEX */
-#gridKevin{
-    display: grid;
-    grid-template-areas: 
-    "navegacion"
-    "inicio"
-    "programas"
-    "footer";
-}
+	header .contenedor {
+		flex-direction: column;
+		text-align: center;
+	}
 
-#inicio{
-    grid-area: inicio;
-}
+	.pelicula-principal {
+		font-size: 14px;
+	}
 
-.lista-navegacion{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-@media (min-width: 768px) {
-    #gridKevin{
-        grid-template-areas: 
-        "navegacion navegacion navegacion"
-        "inicio incio inicio"
-        "programa programa programas"
-        "footer footer footer";
-    }
-    .lista-navegacion{
-        flex-direction: row;
-    }
-    }
-
-#programas{
-    grid-area: programas;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-@media (min-width:768px) {
-    #programas{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        display: inline;
-    }
-    
-}
-
-@media (min-width:1024px) {
-    #programas{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        display: inline;
-    }
-    
-}
-
-#footer{
-    grid-area: footer;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-@media (min-width:768px) {
-    #footer{
-        flex-direction: row;
-        justify-content: flex-start;
-        display: inline;
-    }
-    
-}
-
-.logo-fitness{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-img{
-    max-width: 100%;
-}
-
-.video-fitness{
-    max-width: 100%;
-}
-/* FIN DE MOBILE FIRST */
-
-/**** MAPA DE NAVEGACION ****/
-#mapa-navegacion{
-    display: flex;
-    list-style-type: none;
-    justify-content: center;
-    align-items: center;
-}
-
-#mapa-navegacion{
-    background: rgb(0, 0, 0) ;
+	.pelicula-principal .descripcion {
+		max-width: 100%;
+	}
 }

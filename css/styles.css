@@ -1,143 +1,104 @@
 /* SECCION INICIO*/
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
 @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic);
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
-@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic);
-.lista-navegacion {
+:root {
+  --rojo: #490004;
+  --fondo: #000000; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: var(--fondo);
+  font-family: 'Open Sans', sans-serif; }
+
+.contenedor {
+  width: 90%;
+  margin: auto; }
+
+header {
+  padding: 30px 0; }
+
+header .contenedor {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  background-color: black; }
+  align-items: center; }
 
-.lista-navegacion {
-  list-style-type: none;
-  display: flex;
-  gap: 35px;
-  justify-content: center;
-  font-weight: bold;
-  text-transform: capitalize; }
+header .logotipo {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: normal;
+  color: var(--rojo);
+  font-size: 40px; }
 
-.lista-navegacion li a {
+header nav a {
+  color: #AAA;
   text-decoration: none;
-  color: antiquewhite; }
+  margin-right: 20px; }
 
-.logo-fitness {
-  width: 200px;
-  height: 150px; }
+header nav a:hover,
+header nav a.activo {
+  color: #FFF; }
 
-body {
-  background-color: #0a0909; }
+/* ---- ----- ----- Pelicula Principal ----- ----- ----- */
+.pelicula-principal {
+  font-size: 16px;
+  min-height: 40.62em;
+  color: #fff;
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(../img/imagen-inicio.jpg);
+  background-position: center center;
+  background-size: cover;
+  margin-bottom: 3.12em;
+  display: flex;
+  align-items: end; }
 
-body {
-  background-repeat: no-repeat;
-  background-size: cover; }
+.pelicula-principal .contenedor {
+  margin: 0 auto;
+  margin-bottom: 6.25em; }
 
-.video-fitness {
-  width: 1800px;
-  height: 100%; }
+.pelicula-principal .titulo {
+  font-weight: 600;
+  font-size: 3.12em;
+  margin-bottom: 0.4em; }
 
-h1 {
-  text-align: center;
-  color: #500000;
-  font-family: impact, sans-serif;
-  font-size: 40px; }
+.pelicula-principal .descripcion {
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 1.75em;
+  max-width: 50%;
+  margin-bottom: 1.25em; }
 
-h2 {
-  text-align: center;
-  color: #500000;
-  font-family: impact, sans-serif;
-  font-size: 40px; }
-
-p {
-  color: antiquewhite;
-  text-align: center; }
-
-.programa-fitness {
-  width: 300px;
-  height: 200px;
-  margin: 16px;
-  border-radius: 20px;
-  box-shadow: 5px 8px 12px #130202;
+.pelicula-principal .boton {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 0.31em;
+  padding: 0.93em 1.87em;
+  color: #fff;
+  margin-right: 1.25em;
   cursor: pointer;
-  transition: all 0.3s ease-in-out; }
+  transition: .3s ease all;
+  font-size: 1.12em; }
 
-.programa-fitness:hover {
-  transform: scale(1.1);
-  box-shadow: 13px 15px 37px #130202; }
+.pelicula-principal .boton:hover {
+  background: #fff;
+  color: #000; }
 
-/* FIN SECCION INICIO*/
-/* MOBILE FIRST DE INDEX */
-#gridKevin {
-  display: grid;
-  grid-template-areas: "navegacion" "inicio" "programas" "footer"; }
+.pelicula-principal .boton i {
+  margin-right: 1.25em; }
 
-#inicio {
-  grid-area: inicio; }
-
-.lista-navegacion {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-
-@media (min-width: 768px) {
-  #gridKevin {
-    grid-template-areas: "navegacion navegacion navegacion" "inicio incio inicio" "programa programa programas" "footer footer footer"; }
-  .lista-navegacion {
-    flex-direction: row; } }
-
-#programas {
-  grid-area: programas;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
-@media (min-width: 768px) {
-  #programas {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    display: inline; } }
-
-@media (min-width: 1024px) {
-  #programas {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    display: inline; } }
-
-#footer {
-  grid-area: footer;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
-@media (min-width: 768px) {
-  #footer {
-    flex-direction: row;
-    justify-content: flex-start;
-    display: inline; } }
-
-.logo-fitness {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-
-img {
-  max-width: 100%; }
-
-.video-fitness {
-  max-width: 100%; }
-
-/* FIN DE MOBILE FIRST */
-/**** MAPA DE NAVEGACION ****/
-#mapa-navegacion {
-  display: flex;
-  list-style-type: none;
-  justify-content: center;
-  align-items: center; }
-
-#mapa-navegacion {
-  background: black; }
+/* ---- ----- ----- Media Queries ----- ----- ----- */
+@media screen and (max-width: 800px) {
+  header .logotipo {
+    margin-bottom: 10px;
+    font-size: 30px; }
+  header .contenedor {
+    flex-direction: column;
+    text-align: center; }
+  .pelicula-principal {
+    font-size: 14px; }
+  .pelicula-principal .descripcion {
+    max-width: 100%; } }
 
 /*INICIO SECCION PROGRAMAS (PECHO) */
 .caja-programas {
@@ -401,125 +362,6 @@ hr {
 .pierna {
   display: flex;
   flex-direction: row-reverse; }
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0; }
-
-body {
-  background: #323c41; }
-
-.blog-card {
-  width: 350px;
-  height: 500px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -250px 0 0 -175px;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
-  text-align: center; }
-  .blog-card.spring-fever {
-    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1765/bg-blog-card.jpg) no-repeat; }
-  .blog-card .color-overlay {
-    /* Rectangle 11: */
-    background: rgba(84, 104, 110, 0.4);
-    width: 350px;
-    height: 500px;
-    position: absolute;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    transition: background 0.3s cubic-bezier(0.33, 0.66, 0.66, 1); }
-  .blog-card .gradient-overlay {
-    /* bg-gradient: */
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 21%);
-    background-image: -moz-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 21%);
-    background-image: -o-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 21%);
-    background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 21%);
-    width: 350px;
-    height: 500px;
-    position: absolute;
-    top: 350px;
-    left: 0;
-    z-index: 15; }
-  .blog-card:hover .card-info {
-    opacity: 1;
-    bottom: 120px; }
-  .blog-card:hover .color-overlay {
-    background: rgba(84, 104, 110, 0.8); }
-
-.title-content {
-  text-align: center;
-  margin: 70px 0 0 0;
-  position: absolute;
-  z-index: 20;
-  width: 100%;
-  top: 0;
-  left: 0; }
-
-h3 {
-  font-size: 20px;
-  font-weight: 500;
-  letter-spacing: 2px;
-  color: #9CC9E3;
-  font-family: 'Roboto', sans-serif;
-  margin-bottom: 0; }
-
-hr {
-  width: 50px;
-  height: 3px;
-  margin: 20px auto;
-  border: 0;
-  background: #D0BB57; }
-
-.intro {
-  width: 170px;
-  margin: 0 auto;
-  color: #DCE3E7;
-  font-family: 'Droid Serif', serif;
-  font-size: 13px;
-  font-style: italic;
-  line-height: 18px; }
-
-.card-info {
-  width: 100%;
-  position: absolute;
-  bottom: 100px;
-  left: 0;
-  margin: 0 auto;
-  padding: 0 50px;
-  color: #DCE3E7;
-  font-family: 'Droid Serif', serif;
-  font-style: 16px;
-  line-height: 24px;
-  z-index: 20;
-  opacity: 0;
-  transition: bottom 0.3s, opacity 0.3s cubic-bezier(0.33, 0.66, 0.66, 1); }
-
-.utility-info {
-  position: absolute;
-  bottom: 0px;
-  left: 0;
-  z-index: 20; }
-
-.utility-list {
-  list-style-type: none;
-  margin: 0 0 30px 20px;
-  padding: 0;
-  width: 100%; }
-  .utility-list li {
-    margin: 0 15px 0 0;
-    padding: 0 0 0 22px;
-    display: inline-block;
-    color: #DCE3E7;
-    font-family: 'Roboto', sans-serif; }
-    .utility-list li.comments {
-      background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1765/icon-chat.svg) no-repeat 0 0.1em; }
-    .utility-list li.date {
-      background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1765/icon-calendar.svg) no-repeat 0 0.1em; }
 
 /*FIN SECCION PROGRAMAS (PIERNA)*/
 /*INICIO SECCION PROGRAMAS (ESPALDA)*/
