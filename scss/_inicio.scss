@@ -1,12 +1,17 @@
 /* SECCION INICIO*/
+:root {
+	--rojo: #490004;
+	--fondo: rgb(0, 0, 0);
+}
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-body{
-    background-color: rgb(10, 9, 9);
+body {
+	background-color: var(--fondo);
 }
 
 .contenedor {
@@ -18,7 +23,6 @@ header {
 	padding: 30px 0;
 }
 
-/*
 header .contenedor {
 	display: flex;
 	justify-content: space-between;
@@ -42,27 +46,16 @@ header nav a:hover,
 header nav a.activo {
 	color: #FFF;
 }
-*/
-.lista-navegacion{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-}
-
-.lista-navegacion{
-    list-style-type: none;
-    display: flex;
-    gap: 35px;
-    justify-content: center;
-    font-weight: bold;
-    text-transform: capitalize;
-}
 
 .lista-navegacion li a{
-    text-decoration: none;
     color: antiquewhite;
 }
+
+.inicio{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(5, 5, 139);
+}
+
 
 /* ---- ----- ----- Pelicula Principal ----- ----- ----- */
 .pelicula-principal {
@@ -92,7 +85,7 @@ header nav a.activo {
 	font-weight: normal;
 	font-size: 1em;
 	line-height: 1.75em;
-	max-width: 50%;
+	max-width: 90%;
 	margin-bottom: 1.25em;
 }
 
@@ -117,7 +110,28 @@ header nav a.activo {
 	margin-right: 1.25em;
 }
 
-/* ---- ----- ----- Media Queries ----- ----- ----- 
+#Cartelera{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(5, 5, 139);
+}
+
+
+.posteres{
+    width: 200px;
+    height: 300px;
+    margin: 50px;
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px rgb(1, 0, 31);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.posteres:hover{
+    transform: scale(1.1);
+    box-shadow: 13px 15px 37px rgb(18, 0, 85);
+}
+
+/* ---- ----- ----- Media Queries ----- ----- ----- */
 @media screen and (max-width: 800px) {
 	header .logotipo {
 		margin-bottom: 10px;
