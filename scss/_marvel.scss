@@ -1,0 +1,64 @@
+/*INICIO SECCION MARVEL*/
+.lista-navegacion{
+    justify-content: space-between;
+}
+
+header div h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(199, 0, 0);
+}
+
+.marvel-video{
+    width: 1349px;
+    height: 100%;
+    max-width: 100%;
+}
+
+#galeria-marvel{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.contenedor h2 p{
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+
+.cronologia{
+    width: 200px;
+    height: 300px;
+    margin: 50px;
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px rgb(53, 0, 3) ;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.cronologia:hover{
+    transform: scale(1.1);
+    box-shadow: 13px 15px 37px rgb(53, 0, 3);
+}
+/* FIN SECCION MARVEL */
+
+/*----- MEDIA QUERIES -----
+@media screen and (max-width: 800px) {
+	header .logotipo {
+		margin-bottom: 10px;
+		font-size: 30px;
+	}
+
+	header .contenedor {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.pelicula-principal {
+		font-size: 14px;
+	}
+
+	.pelicula-principal .descripcion {
+		max-width: 100%;
+	}
+}
+*/ 

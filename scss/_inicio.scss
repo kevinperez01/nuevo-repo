@@ -68,6 +68,7 @@ header nav a.activo {
 	margin-bottom: 3.12em;
 	display: flex;
 	align-items: end;
+	width: 100%;
 }
 
 .pelicula-principal .contenedor {
@@ -110,7 +111,8 @@ header nav a.activo {
 	margin-right: 1.25em;
 }
 
-#Cartelera{
+
+#cartelera{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: rgb(5, 5, 139);
 }
