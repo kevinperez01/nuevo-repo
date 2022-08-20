@@ -20,7 +20,7 @@ body {
 }
 
 header {
-	padding: 30px 0;
+	padding: 30px;
 }
 
 header .contenedor {
@@ -126,6 +126,7 @@ header nav a.activo {
     box-shadow: 5px 8px 12px rgb(1, 0, 31);
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+	
 }
 
 .posteres:hover{
