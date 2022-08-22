@@ -45,8 +45,7 @@ header div h1{
 }
 
 .contenedor_tarjeta:hover figure img {
-	/* Si queremos podemos aplicar un efecto blur a nuestra imagen al girar */
-	/*filter:blur(2px);*/
+	filter:blur(2px);
 }
 
 figure {
