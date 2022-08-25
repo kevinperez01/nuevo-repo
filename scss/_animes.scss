@@ -3,45 +3,8 @@
     justify-content: space-between;
 }
 
-#anime-video{
-    width: 1349px;
-    height: 100%
-}
 
-#anime-video{
-    max-width: 100%;
-}
 
-body div .cards{
-    background-color: #2d2a41;
-    height: 100vh;
-    display: grid;
-    place-items: center center;
-}
 
-.cards{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,
-    minmax(400px,1fr));
-    padding: 20px;
-    gap: 40px;
-}
 
-.card{
-background-color: #44425e;
-border-radius: 20px;
-box-shadow:0 0 30px rgba(0,0,0,0.18);
-}
-
-.contenedor-animes{
-    position: relative;
-    clip-path: polygon(0 0,100% 0,100%
-    85%, 0 100%) ;
-}
-
-img{
-    width: 100%;
-    display: block;
-    border-radius:20px 20px 0 0;
-}
 /* FIN SECCION ANIMES */

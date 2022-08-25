@@ -112,9 +112,14 @@ header nav a.activo {
 }
 
 
-#cartelera{
+h2{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: rgb(5, 5, 139);
+}
+
+.contenedor .posteres{
+	display: flex;
+	flex-direction: row;
 }
 
 
@@ -127,6 +132,13 @@ header nav a.activo {
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 	
+}
+
+.contenedor #cartelera{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+
 }
 
 .posteres:hover{

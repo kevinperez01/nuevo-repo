@@ -92,9 +92,13 @@ header nav a.activo {
 .pelicula-principal .boton i {
   margin-right: 1.25em; }
 
-#cartelera {
+h2 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: #05058b; }
+
+.contenedor .posteres {
+  display: flex;
+  flex-direction: row; }
 
 .posteres {
   width: 200px;
@@ -104,6 +108,11 @@ header nav a.activo {
   box-shadow: 5px 8px 12px #01001f;
   cursor: pointer;
   transition: all 0.3s ease-in-out; }
+
+.contenedor #cartelera {
+  display: flex;
+  justify-content: center;
+  flex-direction: row; }
 
 .posteres:hover {
   transform: scale(1.1);
@@ -254,39 +263,6 @@ figure .trasera p {
 /* INICIO DE SECCION ANIMES */
 .lista-navegacion {
   justify-content: space-between; }
-
-#anime-video {
-  width: 1349px;
-  height: 100%; }
-
-#anime-video {
-  max-width: 100%; }
-
-body div .cards {
-  background-color: #2d2a41;
-  height: 100vh;
-  display: grid;
-  place-items: center center; }
-
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  padding: 20px;
-  gap: 40px; }
-
-.card {
-  background-color: #44425e;
-  border-radius: 20px;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.18); }
-
-.contenedor-animes {
-  position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
-
-img {
-  width: 100%;
-  display: block;
-  border-radius: 20px 20px 0 0; }
 
 /* FIN SECCION ANIMES */
 /* INICIO DE SECCION DE "MI LISTA" */
