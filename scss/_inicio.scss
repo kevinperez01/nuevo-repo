@@ -56,6 +56,10 @@ header nav a.activo {
     color: rgb(5, 5, 139);
 }
 
+h2{
+	margin: 30px;
+}
+
 
 /* ---- ----- ----- Pelicula Principal ----- ----- ----- */
 .pelicula-principal {
@@ -116,12 +120,6 @@ h2{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: rgb(5, 5, 139);
 }
-
-.contenedor .posteres{
-	display: flex;
-	flex-direction: row;
-}
-
 
 .posteres{
     width: 200px;
